@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./dist/css/main.css">
-    <script src="./src/js/lib/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./dist/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./dist/css/flickity.css">
+    <script src="./dist/js/flickity.pkgd.min.js"></script>
+<!--  <script src="./dist/js/main.min.js"></script> -->
+    <script src="./src/js/lib/jquery-3.1.1.min.js"></script>
     <script src="./dist/js/jquery.easings.min.js"></script>
     <script src="./dist/js/scrolloverflow.js"></script>
     <script src="./dist/js/jquery.fullPage.js"></script>
@@ -29,70 +32,132 @@
     </header>
     <main id="fullpage">
         <div class="section">
-            <div class="Hero Hero__img1">
-                <p>産社Gakkai</p>
+            <div class="Hero" id="img1">
+                <div class="Hero__img1">
+                    <div class="Hero__logos fadeintop">
+                        <img src="dist/img/gakkai_logo.png" alt="" class="Hero_logo">
+                        <p>産社Gakkai</p>
+                    </div>
+                </div>
+
+                <div class="Scroll">
+                    <a href="#" class="scroll fadeintop"><span></span>Scroll</a>
+                </div>
             </div>
         </div>
         <div class="section fp-normal-scroll">
-            <div class="Hero Hero__img4">
-                <div class="fadein Message">
-                    <h2 class="Message__head">こんにちは！！</h2>
-                    <p class="Message__body">
-                        ssssssssssssssssssss
-                        <br> ssssssssssssssssssss
-                        <br> ssssssssssssssssssss
-                        <br> ssssssssssssssssssss
-                    </p>
+            <div class="Hero">
+                <div class="Hero__img2">
+                    <div class="fadein Message">
+                        <h2 class="Message__head">congratulations!</h2>
+                        <div class="Message__body">
+                            <p>みなさん入学おめでとうございます！</p>
+                            <p>私たち産社学会と申します。</p>
+                            <p>「バンド組みたい！」とか「テニサー入りたい！」とかとか</p>
+                            <p>「バイトしてお金貯めたい！」とか「遊びまくりたい！」とか</p>
+                            <p>例をあげればきりがないくらい心が踊ってることだと思います。</p>
+                            <p>大学生活はとても楽しいですよ！！</p>
+                            <p>さてさて、とはいえみなさんは学生ですから、学ぶことが本職です。</p>
+                            <p> 遊んだり大学生っぽいこともたくさんたいけど、</p>
+                            <p>学問も疎かにしたくないですよね？</p>
+                            <p>しっかり単位を取らないと卒業できませんしね...</p>
+                            <p>単位もしっかり取れて大学生活も充実させることができれば</p>
+                            <p>最高じゃないですか？</p>
+                            <p>私たちは、産業社会学部を「学び」で盛り上げている団体です！</p>
+                        </div>
+                        <div class="Message__close" id="messageclose">CLOSE</div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="About">
+            <div class="About__title">
+                <div class="About__box">
+                    <h1>About</h1>
+                    <p>産社Gakkaiについて</p>
+                </div>
+            </div>
+            <div class="About__body">
+                <img src="./dist/img/relation.png" class="fadein">
+                <p class="fadein">正式名称産業社会学会学生委員会</p>
+                <p class="fadein">めちゃくちゃ長くて覚えづらいと思います</p>
+                <p class="fadein">産業社会学部は4つの組織によって学部を盛り上げています</p>
+                <p class="fadein">私たち学生い委員会は「学びのサポート」</p>
+                <p class="fadein">自治会は「ピアサポート」</p>
+                <p class="fadein">D-Pulsは「電子機器のサポート」</p>
+                <p class="fadein">SIS Buddyは「留学生のサポート」</p>
+                <p class="fadein">以上の4団体が連携を取りながら一丸となって産社を盛り上げています</p>
+                <p class="fadein">そんな一端を担っているのが通称「産社学会」の私たちです！</p>
+                <p class="fadein">私たちと一緒に産社を盛り上げませんか？</p>
+            </div>
+            <div class="About__foot fadein"><a href="">Join us!</a></div>
+        </div>
+
         <section id="section1">
             <div class="bg">
                 <div class="bgtitle">
-                    <h2 class="SectionLine">Works</h2>
+                    <div class="SectionLine">
+                        <div class="SectionLine__box">
+                            <h1 id="project_title">Project</h1>
+                            <p>産社GakkaiのProject紹介</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="Works" id="section1" >
-                <div class="Works__work fadein">
-                    <h2 class="Works__head">さんたま</h2>
-                    <p class="Works__body">
-                        ssssssssssssss
-                        <br> ssssssssssssss
-                        <br> ssssssssssssss
-                        <br> ssssssssssssss
-                        <br> ssssssssssssss
-                        <br>
-                    </p>
+            <div class="ImageSlide">
+                <div class="fadein">
+                    <ul id="Slide" class="ImageSlide__main">
+                        <li class="ImageSlide__item js-slide-item">
+                            <div class="Overlay__koenkai">
+                                <a href="" class="Overlay">
+                                    <h3 class="Overlay__head">講演会</h3>
+                                    <p class="Overlay__body">
+                                        学生による、学生のための講演会！学生が呼びたい人を呼び、テーマを設定し一から企画して行きます。
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="ImageSlide__item js-slide-item">
+                            <div class="Overlay__honyasan">
+                                <a href="" class="Overlay">
+                                    <h3 class="Overlay__head">さんしゃの本屋さん</h3>
+                                    <p class="Overlay__body">
+                                        学生の皆さんに面白い本に出会ってもらうために、新品本、古本を格安で提供しています。約2000冊完備！
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="ImageSlide__item js-slide-item">
+                            <div class="Overlay__zemitai">
+                                <a href="" class="Overlay">
+                                    <h3 class="Overlay__head">ゼミナール大会</h3>
+                                    <p class="Overlay__body">
+                                        産業社会学部の学生たちが各々の研究を持ち寄り、教授・院生の前で発表し、盛り上げる場所です！
+                                    </p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                <div class="ImageSlide__sub">
+                    <span class="ImageSlide__dot js-slide-point">image1</span>
+                    <span class="ImageSlide__dot js-slide-point" isActive>image2</span>
+                    <span class="ImageSlide__dot js-slide-point">image3</span>
                 </div>
-                <div class="Works__work fadein">
-                    <h2 class="Works__head">ぜみたい</h2>
-                    <p class="Works__body">
-                        ssssssssssssss
-                        <br> ssssssssssssss
-                        <br> ssssssssssssss
-                        <br> ssssssssssssss
-                        <br> ssssssssssssss
-                        <br>
-                    </p>
                 </div>
-                <div class="Works__work fadein">
-                    <h2 class="Works__head">産社の本屋さん</h2>
-                    <p class="Works__body">
-                        ssssssssssssss
-                        <br> ssssssssssssss
-                        <br> ssssssssssssss
-                        <br> ssssssssssssss
-                        <br> 写真とかプロジェクトはまだまだいっぱいある！
-                        <br>
-                    </p>
-                </div>
+
+                <a class="Overlay__readmore fadein">READ MORE</a>
             </div>
         </section>
 
         <section id="section2">
             <div class="bg">
                 <div class="bgtitle">
-                    <h2 class="SectionLine">Event</h2>
+                    <div class="SectionLine">
+                        <div class="SectionLine__box">
+                            <h1 id="event_title">Event</h1>
+                            <p>新歓イベント情報</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="Events">
@@ -140,6 +205,9 @@
             <p><a href="#">Twitter</a></p>
         </ul>
     </footer>
+    <div class="rights">
+        <p>©2017 Koji Taniguchi All Rights Reserved.</p>
+    </div>
 
 
 
@@ -156,7 +224,29 @@
                 }
             })
         })
+
+        $(window).ready(function () {
+            $(".fadeintop").each(function () {
+                var elemTop = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > elemTop - windowHeight) {
+                    $(this).addClass("scrollin")
+                } else {
+                    $(this).removeClass("scrollin")
+                }
+            })
+        })
+
+        $('#messageclose').click(function () {
+            $('.Message').addClass("opacity")
+        })
+
     </script>
+    <script>
+        imageSlide('Slide', 2);
+    </script>
+
 </body>
 
 </html>

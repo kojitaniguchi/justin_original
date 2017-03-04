@@ -5,6 +5,8 @@
 // ===========================
 @import "./base/variables";
 @import "./base/reset";
+@import "./base/lib/fa/font-awesome";
+@import "./base/mixins";
 
 
 // ===========================
@@ -14,8 +16,16 @@
 @import "./components/footer";
 @import "./components/menu";
 @import "./components/hero";
+@import "./components/about";
 @import "./components/fadein";
 @import "./components/works";
 @import "./components/events";
 @import "./components/sectionLine";
 @import "./components/bgscroll";
+@import "./components/overlay";
+@import "./components/imageSlide";
+// ===========================
+// Fonts
+// ===========================
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two:400,400i');

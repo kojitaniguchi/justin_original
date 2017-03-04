@@ -1,0 +1,60 @@
+@charset 'utf-8';
+
+.About {
+    width: 100%;
+    height: 120vh;
+    z-index: 1;
+    background-color: #fff;
+    &__title {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__body {
+        text-align: center;
+        line-height: 200%;
+    }
+    &__body img{
+        margin-bottom: 30px;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__box h1{
+        text-align: center;
+
+        @include title-font;
+    }
+    &__box p{
+        font-family: "Noto Sans JP", "Hiragino Sans", "Sintony", "游ゴシック", "MS 明朝", "MS Mincho", Arial, Helvetica, Sans-serif;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    &__foot {
+        margin-top: 30px;
+        text-align: center;
+    }
+    &__foot a{
+        display: inline-block;
+        width: 150px;
+        border-radius: 18px;
+        text-align: center;
+        line-height: 32px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        border: 2px solid $color-main-text;
+        cursor: pointer;
+        color: $color-main-text;
+    }
+}
+
+

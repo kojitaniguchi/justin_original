@@ -2,9 +2,24 @@
 
 .fadein {
     opacity: 0;
-    transition: 2s;
+    transform: translate(0, 50px);
+    transition: 2.5s;
+}
+
+.fadeintop {
+    opacity: 0;
+    transform: translate(0, 0px);
+    transition: 4s;
 }
 
 .scrollin {
     opacity: 1;
+    transform: translate(0, 0);
 }
+
+.opacity {
+    opacity: 0;
+    transform: translate(0, 50px);
+}
+
+
