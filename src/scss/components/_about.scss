@@ -16,8 +16,14 @@
         text-align: center;
         line-height: 200%;
     }
-    &__body img{
+    &__body img {
         margin-bottom: 30px;
+    }
+    &__body h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 100;
+        color: $color-main;
     }
     &__box {
         display: flex;
@@ -55,6 +61,10 @@
         cursor: pointer;
         color: $color-main-text;
     }
+}
+
+#contact {
+    background-color: $color-second;
 }
 
 
